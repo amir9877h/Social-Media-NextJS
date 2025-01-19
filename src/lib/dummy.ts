@@ -6,7 +6,7 @@ export const allPost = [
     pics: "https://i.pravatar.cc/150?img=30",
     caption: "Enjoying a sunny day at the park!",
     videoSrc:
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "https://videos.pexels.com/video-files/8129458/8129458-hd_720_1366_50fps.mp4",
     likes: "998.9K",
     comment: 1021,
     bookmark: 21,
@@ -49,7 +49,7 @@ export const allPost = [
     pics: "https://i.pravatar.cc/150?img=35",
     caption: "Cooking my favorite dish today!",
     videoSrc:
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "https://videos.pexels.com/video-files/8005697/8005697-hd_720_1280_25fps.mp4",
     likes: "450K",
     comment: 800,
     bookmark: 150,
@@ -78,7 +78,7 @@ export const allPost = [
     pics: "https://i.pravatar.cc/150?img=38",
     caption: "Hiking adventures in the mountains.",
     videoSrc:
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "https://videos.pexels.com/video-files/6686334/6686334-hd_720_1280_50fps.mp4",
     likes: "780K",
     comment: 1200,
     bookmark: 300,
@@ -107,7 +107,7 @@ export const allPost = [
     pics: "https://i.pravatar.cc/150?img=33",
     caption: "Chillin' with my cat 🐱",
     videoSrc:
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "https://videos.pexels.com/video-files/7570463/7570463-hd_720_1366_25fps.mp4",
     likes: "600K",
     comment: 900,
     bookmark: 180,
@@ -136,7 +136,7 @@ export const allPost = [
     pics: "https://i.pravatar.cc/150?img=31",
     caption: "Beach day vibes 🏖️",
     videoSrc:
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "https://videos.pexels.com/video-files/6688127/6688127-hd_720_1280_50fps.mp4",
     likes: "1.2M",
     comment: 1500,
     bookmark: 400,
