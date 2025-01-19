@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { User } from "lucide-react";
 import { Button } from "./ui/button";
-import HomeIcon from "../../public/assets/home2.svg";
-import Badge from "../../public/assets/badge.svg";
+// import HomeIcon from "../../public/assets/home2.svg";
+// import Badge from "../../public/assets/badge.svg";
 
 const LeftSidebar = () => {
   const suggestedAccounts = [
@@ -63,7 +63,9 @@ const LeftSidebar = () => {
                     className="flex items-center space-x-3 text-primary p-0 !no-underline"
                   >
                     <Image
-                      src={HomeIcon}
+                      width={30}
+                      height={30}
+                      src={`/assets/home2.svg`}
                       alt="home"
                       className="w-7 h-7 dark:invert"
                     />
@@ -104,7 +106,14 @@ const LeftSidebar = () => {
                     <h5 className="text-[#09090b] dark:text-white flex items-center gap-2 font-bold leading-[19.5px]">
                       <span>{account.name}</span>
                       <span>
-                        {account.verified && <Image src={Badge} alt="badge" />}
+                        {account.verified && (
+                          <Image
+                            width={20}
+                            height={20}
+                            src={`/assets/badge.svg`}
+                            alt="badge"
+                          />
+                        )}
                       </span>
                     </h5>
                     <span className="!text-black/70 dark:!text-white/70 font-normal text-sm">
@@ -140,7 +149,14 @@ const LeftSidebar = () => {
                     <h5 className="flex items-center gap-2 font-bold leading-[19.5px] text-[#09090b] dark:text-white">
                       <span>{account.name}</span>
                       <span>
-                        {account?.verified && <Image src={Badge} alt="badge" />}
+                        {account?.verified && (
+                          <Image
+                            width={20}
+                            height={20}
+                            src={`/assets/badge.svg`}
+                            alt="badge"
+                          />
+                        )}
                       </span>
                     </h5>
                     <span className="text-black/70 dark:text-white/70 font-normal text-sm">

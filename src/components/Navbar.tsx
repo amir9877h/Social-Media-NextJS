@@ -15,9 +15,9 @@ import {
   DropdownMenuRadioGroup,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "./ui/button";
-import SendIcon from "../../public/assets/send.svg";
-import MessageIcon from "../../public/assets/message.svg";
-import Logo from "../../public/next.svg";
+// import SendIcon from "../../public/assets/send.svg";
+// import MessageIcon from "../../public/assets/message.svg";
+// import Logo from "../../public/next.svg";
 // import LogoDark from "../../public/assets/logo-dark.svg";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import Image from "next/image";
@@ -34,9 +34,15 @@ const Navbar = () => {
         <div className="flex-1 flex flex-col items-start justify-start">
           <Link className="w-[80px]" href="/">
             {activeTheme === "dark" ? (
-              <Image src={Logo} alt="logo" className="invert" />
+              <Image
+                width={80}
+                height={40}
+                src={`/next.svg`}
+                alt="logo"
+                className="invert"
+              />
             ) : (
-              <Image src={Logo} alt="logo" />
+              <Image width={80} height={40} src={`/next.svg`} alt="logo" />
             )}
             <strong className="hidden">NextSocial</strong>
           </Link>
@@ -116,7 +122,9 @@ const Navbar = () => {
           <div className="relative">
             <Link href="/">
               <Image
-                src={SendIcon}
+                width={30}
+                height={30}
+                src={`/assets/send.svg`}
                 alt="send"
                 className="w-6 h-6 dark:invert"
               />
@@ -132,7 +140,9 @@ const Navbar = () => {
           <div className="relative">
             <Link href="/">
               <Image
-                src={MessageIcon}
+                width={30}
+                height={30}
+                src={`/assets/message.svg`}
                 alt="message"
                 className="w-8 h-8 dark:invert"
               />
