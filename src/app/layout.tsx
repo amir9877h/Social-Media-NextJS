@@ -3,6 +3,7 @@ import { Urbanist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/context/ThemeProvider";
+import LeftSidebar from "@/components/LeftSidebar";
 
 const urbanist = Urbanist({
   variable: "--font-urbanist",
@@ -20,17 +21,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${urbanist.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
           <div className="min-h-screen bg-white dark:bg-black">
             <Navbar />
             <main className="relative pt-[60px] lg:pt-[70px] flex items-center w-[100vw] max-w-full justify-between">
+              <LeftSidebar />
               <div className="flex-1">{children}</div>
             </main>
           </div>

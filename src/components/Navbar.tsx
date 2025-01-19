@@ -17,8 +17,8 @@ import {
 import { Button } from "./ui/button";
 import SendIcon from "../../public/assets/send.svg";
 import MessageIcon from "../../public/assets/message.svg";
-import Logo from "../../public/assets/logo.svg";
-import LogoDark from "../../public/assets/logo-dark.svg";
+import Logo from "../../public/next.svg";
+// import LogoDark from "../../public/assets/logo-dark.svg";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import Image from "next/image";
 
@@ -32,11 +32,11 @@ const Navbar = () => {
       <div className="max-w-default mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex-1 flex flex-col items-start justify-start">
-          <Link className="" href="/">
+          <Link className="w-[80px]" href="/">
             {activeTheme === "dark" ? (
-              <Image src={Logo} alt="logo" />
+              <Image src={Logo} alt="logo" className="invert" />
             ) : (
-              <Image src={LogoDark} alt="logo" />
+              <Image src={Logo} alt="logo" />
             )}
             <strong className="hidden">NextSocial</strong>
           </Link>
