@@ -5,6 +5,7 @@
 ## Preview
 
 ![p01](https://raw.githubusercontent.com/amir9877h/Social-Media-NextJS/refs/heads/main/public/p01.png)
+![p02](https://raw.githubusercontent.com/amir9877h/Social-Media-NextJS/refs/heads/main/public/p02.png)
 
 ## Help
 

@@ -29,7 +29,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="min-h-screen bg-white dark:bg-black">
+          <div className="min-h-screen bg-white dark:bg-black flex flex-col">
             <Navbar />
             <main className="relative pt-[60px] lg:pt-[70px] flex items-center w-[100vw] max-w-full justify-between">
               <LeftSidebar />
